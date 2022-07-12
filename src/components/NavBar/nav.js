@@ -21,19 +21,28 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 const Links = ['About Me','Projects', 'Resume','Contact'];
 
-const NavLink = ({ children }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
-        }}
-        href={children.split(" ")[0]}>
-        {children}
-    </Link>
-);
+const NavLink = ({ children }) => {
+    let url = children.split(" ")[0];
+    let tar = '_self';
+    if(children ==='Resume'){
+        url = 'https://drive.google.com/file/d/1u57MXsaemJHLrZiLepUqFHbMJBEKVzPD/view?usp=sharing';
+        tar = '_blank';
+    }
+    return (
+        <Link
+            px={2}
+            py={1}
+            rounded={'md'}
+            _hover={{
+                textDecoration: 'none',
+                bg: useColorModeValue('gray.200', 'gray.700'),
+            }}
+            target={tar}
+            href={ url}>
+            {children}
+        </Link>
+    )
+}
 
 function Nav() {
     const { isOpen, onOpen, onClose } = useDisclosure();
