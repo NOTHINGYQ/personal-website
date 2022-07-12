@@ -19,7 +19,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const Links = ['Projects', 'Resume', 'other'];
+const Links = ['About Me','Projects', 'Resume','Contact'];
 
 const NavLink = ({ children }) => (
     <Link
@@ -30,7 +30,7 @@ const NavLink = ({ children }) => (
             textDecoration: 'none',
             bg: useColorModeValue('gray.200', 'gray.700'),
         }}
-        href={'#'}>
+        href={children.split(" ")[0]}>
         {children}
     </Link>
 );
@@ -50,17 +50,17 @@ function Nav() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>Home</Box>
+                        <Box><a href='/'>Home</a></Box>
+                    </HStack>
+                    <Flex alignItems={'center'}>
                         <HStack
                             as={'nav'}
                             spacing={4}
                             display={{ base: 'none', md: 'flex' }}>
-                            {Links.map((link) => (
-                                <NavLink key={link}>{link}</NavLink>
-                            ))}
+                            {Links.map((link) => {
+                                    return <NavLink key={link}>{link}</NavLink>
+                            })}
                         </HStack>
-                    </HStack>
-                    <Flex alignItems={'center'}>
                         <Button onClick={toggleColorMode}>
                             {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                         </Button>
@@ -77,8 +77,6 @@ function Nav() {
                     </Box>
                 ) : null}
             </Box>
-
-            <Box p={4}>Main Content Here</Box>
         </>
     );
 }
