@@ -33,10 +33,8 @@ export default function SecondPart() {
                         lineHeight={'110%'}>
                         Hi <br />
                     </Heading>
-                    <Text color={'gray.500'}>
-                        Monetize your content by charging your most loyal readers and reward
-                        them loyalty points. Give back to your loyal readers by granting
-                        them access to your pre-releases and sneak-peaks.
+                    <Text color={'gray.500'} fontSize={20}>
+                        I'm Yu Liu. A MSCS student at the University of Southern California.
                     </Text>
                     <Stack
                         direction={'column'}

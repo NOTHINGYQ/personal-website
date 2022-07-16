@@ -8,6 +8,7 @@ import {
     Button,
     Link,
     Badge,
+    HStack,
     useColorModeValue, Image,
 } from '@chakra-ui/react';
 
@@ -40,44 +41,22 @@ export default function Card(props) {
                     textAlign={'center'}
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}>
-                    Actress, musician, songwriter and artist. PM for work inquires or{' '}
-                    <Link href={'#'} color={'blue.400'}>
-                        #tag
-                    </Link>{' '}
-                    me in your posts
+                    {props.item.content}
                 </Text>
 
                 <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-                    <Badge
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        fontWeight={'400'}>
-                        #JavaScript
-                    </Badge>
-                    <Badge
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        fontWeight={'400'}>
-                        #photography
-                    </Badge>
-                    <Badge
-                        px={2}
-                        py={1}
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        fontWeight={'400'}>
-                        #JavaScript
-                    </Badge>
+                    {
+                        props.item.tec.map((value) =>(
+                            <Badge
+                                fontWeight={'400'}>
+                                {value}
+                            </Badge>
+                        ))
+                    }
                 </Stack>
 
-                <Stack mt={8} direction={'row'} spacing={4}>
-                    <Button
-                        flex={1}
-                        fontSize={'sm'}
-                        rounded={'full'}
-                        _focus={{
-                            bg: 'gray.200',
-                        }}>
-                        Message
-                    </Button>
-                    <Button
+                <HStack mt={4} direction={'row'} spacing={6} justify={'center'}>
+                    <a href={props.item.demo}><Button
                         flex={1}
                         fontSize={'sm'}
                         rounded={'full'}
@@ -92,9 +71,26 @@ export default function Card(props) {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        Follow
-                    </Button>
-                </Stack>
+                        demo
+                    </Button></a>
+                    <a href={props.item.github}><Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                            '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+                        }
+                        _hover={{
+                            bg: 'blue.500',
+                        }}
+                        _focus={{
+                            bg: 'blue.500',
+                        }}>
+                        github
+                    </Button></a>
+                </HStack>
             </Box>
         </Center>
     );
