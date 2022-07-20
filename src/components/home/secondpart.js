@@ -11,7 +11,7 @@ import ThirdPart from "./thirdpart";
 
 const FirstPart = ()=>{
     return(
-        <Stack minH={'40vh'} direction={{ base: 'column', md: 'row' }} marginBottom={50}>
+        <Stack maxW={'1100px'} margin={'auto'} minH={'40vh'} direction={{ base: 'column', md: 'row' }} marginBottom={50}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -32,8 +32,7 @@ const FirstPart = ()=>{
                         </Text>
                     </Heading>
                     <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                        The project board is an exclusive resource for contract work. It's
-                        perfect for freelancers, agencies, and moonlighters.
+                        These are some of the projects I did.
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                         <a href='projects'><Button

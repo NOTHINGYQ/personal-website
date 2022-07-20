@@ -24,28 +24,28 @@ export default function ThirdPart(){
     const slides = [
         {
             img: "https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            label: "First Slide",
-            description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+            label: "BLOG",
+            description: "A MERN PROJECT",
         },
         {
             img: "https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            label: "Second Slide",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            label: "E-commerce Seckill System",
+            description: "A Sec-Kill system of e-commerce implemented by Spring Boot and MyBatis",
         },
         {
             img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-            label: "Third Slide",
+            label: "Course Management System",
             description:
-                "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+                "A Course Management System using MVC architecture",
         },
         {
             img: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            label: "Fourth Slide",
-            description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+            label: "Minesweeper",
+            description: "A front-end project",
         },
         {
             img: "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            label: "Fifth Slide",
+            label: "xxxx",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
     ];

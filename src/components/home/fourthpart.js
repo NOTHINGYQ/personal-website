@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit, FcPodiumWithSpeaker,FcIdea } from 'react-icons/fc';
+import { FcAssistant, FcDonate, FcInTransit, FcPodiumWithSpeaker,FcIdea,FcBullish } from 'react-icons/fc';
+
 
 
 const Feature = ({ title, text, icon }) => {
@@ -25,27 +26,27 @@ const Feature = ({ title, text, icon }) => {
 
 export default function Fourthpart() {
     return (
-        <Box p={4}>
+        <Box p={4} maxW={'1100px'} margin={'auto'}>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                 <Feature
-                    icon={<Icon as={FcAssistant} w={10} h={10} />}
-                    title={'Lifetime Support'}
+                    icon={<Icon as={FcBullish} w={10} h={10} />}
+                    title={'Eagerness to Learn'}
                     text={
-                        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        'Over the past years, with great enthusiasm, I grew up to be a skillful and experienced programmer through committing countless hours to learn extra-curricular technologies as well as applying them in practice, even sometimes on the spot.'
                     }
                 />
                 <Feature
                     icon={<Icon as={FcPodiumWithSpeaker} w={10} h={10} />}
                     title={'Leadership'}
                     text={
-                        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        'Led team members to participate in an autonomous race car competition and won national third prize'
                     }
                 />
                 <Feature
                     icon={<Icon as={FcIdea} w={10} h={10} />}
                     title={'Creativity'}
                     text={
-                        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        'Creativity is another key that fosters me to excel as a programmer. With a solid understanding of skills learned, whenever needed, I always come up with solutions that exit.'
                     }
                 />
             </SimpleGrid>
