@@ -20,12 +20,16 @@ export default function Card(props) {
     return (
         <Center py={3}>
             <Box
-                maxW={'320px'}
+                maxW={'md'}
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
                 rounded={'lg'}
+                display={'block'}
+                borderWidth={'1px'}
+                minH={'lg'}
                 p={6}
+                paddingBottom={0}
                 textAlign={'center'}>
                 <Image
                     rounded={'lg'}
@@ -34,17 +38,20 @@ export default function Card(props) {
                     objectFit={'cover'}
                     src={props.item.img}
                 />
-                <Heading fontSize={'2xl'} fontFamily={'body'}>
+
+                <Heading fontSize={'18px'} fontFamily={'body'} marginTop={1}>
                     {props.item.title}
                 </Heading>
                 <Text
+                    display={'block'}
                     textAlign={'center'}
+                    minH={100}
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}>
                     {props.item.content}
                 </Text>
 
-                <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
+                <Stack minH={35} display={'block'} align={'center'} justify={'center'} direction={'row'} mt={6}>
                     {
                         props.item.tec.map((value) =>(
                             <Badge
@@ -55,8 +62,9 @@ export default function Card(props) {
                     }
                 </Stack>
 
-                <HStack mt={4} direction={'row'} spacing={6} justify={'center'}>
-                    <a href={props.item.demo}><Button
+
+                <HStack paddingTop={1} direction={'row'} spacing={6} justify={'center'}>
+                    <a href={props.item.demo} target={'_blank'}><Button
                         flex={1}
                         fontSize={'sm'}
                         rounded={'full'}
@@ -68,12 +76,13 @@ export default function Card(props) {
                         _hover={{
                             bg: 'blue.500',
                         }}
+
                         _focus={{
                             bg: 'blue.500',
                         }}>
                         demo
                     </Button></a>
-                    <a href={props.item.github}><Button
+                    <a href={props.item.github} target={'_blank'}><Button
                         flex={1}
                         fontSize={'sm'}
                         rounded={'full'}
