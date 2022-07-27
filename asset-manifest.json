@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jason-liu/static/css/main.d12c1fa7.css",
+    "main.js": "/jason-liu/static/js/main.bdd24bb0.js",
+    "index.html": "/jason-liu/index.html",
+    "main.d12c1fa7.css.map": "/jason-liu/static/css/main.d12c1fa7.css.map",
+    "main.bdd24bb0.js.map": "/jason-liu/static/js/main.bdd24bb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d12c1fa7.css",
+    "static/js/main.bdd24bb0.js"
+  ]
+}
