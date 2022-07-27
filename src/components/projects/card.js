@@ -20,7 +20,7 @@ export default function Card(props) {
     return (
         <Center py={3}>
             <Box
-                maxW={'md'}
+                maxW={'lg'}
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
@@ -34,28 +34,30 @@ export default function Card(props) {
                 <Image
                     rounded={'lg'}
                     height={230}
-                    width={282}
+                    width={280}
                     objectFit={'cover'}
                     src={props.item.img}
                 />
 
-                <Heading fontSize={'18px'} fontFamily={'body'} marginTop={1}>
+                <Heading fontSize={'18px'} fontFamily={'body'} marginTop={1} paddingBottom={1}>
                     {props.item.title}
                 </Heading>
                 <Text
-                    display={'block'}
                     textAlign={'center'}
-                    minH={100}
+                    display={'block'}
+                    paddingTop={1}
+                    fontSize={14}
+                    minH={120}
                     color={useColorModeValue('gray.700', 'gray.400')}
-                    px={3}>
+                    >
                     {props.item.content}
                 </Text>
 
-                <Stack minH={35} display={'block'} align={'center'} justify={'center'} direction={'row'} mt={6}>
+                <Stack display={'block'} align={'flex-start'} justify={'left'} direction={'row'} >
                     {
                         props.item.tec.map((value) =>(
                             <Badge
-                                fontWeight={'400'}>
+                                fontWeight={'500'}>
                                 {value}
                             </Badge>
                         ))
@@ -63,7 +65,7 @@ export default function Card(props) {
                 </Stack>
 
 
-                <HStack paddingTop={1} direction={'row'} spacing={6} justify={'center'}>
+                <HStack paddingTop={2} direction={'row'} spacing={12} justify={'center'}>
                     <a href={props.item.demo} target={'_blank'}><Button
                         flex={1}
                         fontSize={'sm'}
@@ -80,7 +82,7 @@ export default function Card(props) {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        demo
+                        Demo
                     </Button></a>
                     <a href={props.item.github} target={'_blank'}><Button
                         flex={1}
@@ -97,7 +99,7 @@ export default function Card(props) {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        github
+                        Github
                     </Button></a>
                 </HStack>
             </Box>

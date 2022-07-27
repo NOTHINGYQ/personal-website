@@ -34,7 +34,7 @@ export default function SecondPart() {
                         Hi <br />
                     </Heading>
                     <Text color={'gray.500'} fontSize={20}>
-                        I'm Yu Liu. A MSCS student at the University of Southern California.
+                        I'm Yu Liu, or you can call me Jason. A MSCS student at the University of Southern California.
                     </Text>
                     <Stack
                         direction={'column'}

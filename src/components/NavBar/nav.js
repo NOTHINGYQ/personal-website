@@ -19,7 +19,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const Links = ['About Me','Projects', 'Resume','Contact'];
+const Links = ['Home','About Me','Projects', 'Resume'];
 
 const NavLink = ({ children }) => {
     let url = children.split(" ")[0];
@@ -28,6 +28,7 @@ const NavLink = ({ children }) => {
         url = 'https://drive.google.com/file/d/1u57MXsaemJHLrZiLepUqFHbMJBEKVzPD/view?usp=sharing';
         tar = '_blank';
     }
+    if(children ==='Home') url='/';
     return (
         <Link
             px={2}
@@ -59,7 +60,7 @@ function Nav() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box><a href='/'>Home</a></Box>
+                        <Box><a href='/'>Jason Liu</a></Box>
                     </HStack>
                     <Flex alignItems={'center'}>
                         <HStack

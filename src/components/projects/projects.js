@@ -9,17 +9,17 @@ const IMAGE =
 const items=[
     {
         title:"Blog",
-        content:"Loremm is simply dummy text of the printing and typesetting industry. ",
+        content:"A MERN stack blog application that includes user authentication, profiles, and forum posts. Integrated with an extensive backend API and Redux.",
         img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-        tec:["java","javascript","C++","CSS","react"],
+        tec:["javascript","Node.js","React","Heroku","MongoDB","JWT"],
         demo:"https://blog-ly.netlify.app",
         github:"https://github.com/NOTHINGYQ/mern-blog-frontend"
     },
     {
         title:"E-commerce",
-        content:"Lorem Ipsum printing and typesetting industry. dumok a galley of type and scrambled it to make a type specimen book. ",
+        content:"A Sec-kill system of e-commerce platform by SpringBoot and MyBatis. Achieved by caching with redis and asynchronous messaging with RocketMQ.",
         img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-        tec:["java","javascript","python","python","python",],
+        tec:["java","SpringBoot","MyBatis","Redis","Nginx","RocketMQ","React"],
         demo:"#",
         github:"#"
     },
