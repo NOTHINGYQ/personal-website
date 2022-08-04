@@ -31,7 +31,7 @@ export default function SecondPart() {
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}>
-                        Hi <br />
+                        Hi ✌️<br />
                     </Heading>
                     <Text color={'gray.500'} fontSize={20}>
                         I'm Yu Liu, or you can call me Jason. A MSCS student at the University of Southern California.

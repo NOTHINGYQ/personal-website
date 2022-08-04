@@ -25,10 +25,12 @@ const NavLink = ({ children }) => {
     let url = children.split(" ")[0];
     let tar = '_self';
     if(children ==='Resume'){
-        url = 'https://drive.google.com/file/d/1u57MXsaemJHLrZiLepUqFHbMJBEKVzPD/view?usp=sharing';
+        url = 'https://drive.google.com/file/d/1f6MDZJn0vgYEQ5CcvFozOF72e8KO3NpZ/view?usp=sharing';
         tar = '_blank';
     }
-    if(children ==='Home') url='/';
+    // if(children ==='Home') url='/';
+    //when deploy on github page, change prefix path
+    if(children ==='Home') url='/personal-website/';
     return (
         <Link
             px={2}
@@ -60,7 +62,9 @@ function Nav() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box><a href='/'>Jason Liu</a></Box>
+                        {/*when deploy on github page, change prefix path*/}
+                        {/*<Box><a href='/'>Jason Liu</a></Box>*/}
+                        <Box><a href='/personal-website/'>Jason Liu</a></Box>
                     </HStack>
                     <Flex alignItems={'center'}>
                         <HStack
