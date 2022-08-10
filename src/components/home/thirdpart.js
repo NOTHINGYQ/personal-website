@@ -23,9 +23,14 @@ export default function ThirdPart(){
 
     const slides = [
         {
-            img: "https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            img: 'https://image-hub.imgix.net/blog.png?fit=auto',
             label: "BLOG",
             description: "A MERN PROJECT",
+        },
+        {
+            img: 'https://image-hub.imgix.net/minesweeper.png?fit=clip',
+            label: "Minesweeper",
+            description: "A front-end project",
         },
         {
             img: "https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -38,11 +43,7 @@ export default function ThirdPart(){
             description:
                 "A Course Management System using MVC architecture",
         },
-        {
-            img: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            label: "Minesweeper",
-            description: "A front-end project",
-        },
+
         {
             img: "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             label: "xxxx",
@@ -66,6 +67,7 @@ export default function ThirdPart(){
     const carouselStyle = {
         transition: "all .5s",
         ml: `-${currentSlide * 100}%`,
+
     };
 
     return (

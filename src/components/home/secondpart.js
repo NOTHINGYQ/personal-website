@@ -8,6 +8,7 @@ import {
     useBreakpointValue,
 } from '@chakra-ui/react';
 import ThirdPart from "./thirdpart";
+import TP from "./thirdpar-2";
 
 const FirstPart = ()=>{
     return(
@@ -42,7 +43,7 @@ const FirstPart = ()=>{
                             _hover={{
                                 bg: 'blue.500',
                             }}>
-                            Learn More
+                            Detail
                         </Button></a>
                     </Stack>
                 </Stack>
@@ -57,6 +58,7 @@ const FirstPart = ()=>{
                 {/*    }*/}
                 {/*/>*/}
                 <ThirdPart/>
+                {/*<TP/>*/}
             </Flex>
         </Stack>
     )

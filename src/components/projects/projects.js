@@ -9,7 +9,7 @@ const items=[
     {
         title:"Blog",
         content:"A MERN stack blog application that includes user authentication, profiles, and forum posts. Integrated with an extensive backend API and Redux.",
-        img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+        img:'https://image-hub.imgix.net/blog.png?fit=auto',
         tec:["javascript","Node.js","React","Heroku","MongoDB","JWT"],
         demo:"https://blog-ly.netlify.app",
         github:"https://github.com/NOTHINGYQ/mern-blog-frontend"
@@ -17,7 +17,7 @@ const items=[
     {
         title:"Minesweeper",
         content:"A react project which use javascript to implement minesweeper game.",
-        img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+        img: 'https://image-hub.imgix.net/minesweeper.png?fit=clip',
         tec:["javascript","Node.js","React","GitHub Page","CSS","HTML"],
         demo:"https://nothingyq.github.io/Minesweeper-React/",
         github:"https://github.com/NOTHINGYQ/Minesweeper-React"
@@ -33,7 +33,8 @@ const items=[
     {
         title:"Course management system",
         content:"Loreafasdfsafas sa fdas fsa sf afd as dafsad fm",
-        img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+        img: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=3501&q=80',
+
         tec:["java","javascript","python","c++","HTML"],
         demo:"#",
         github:"#"
@@ -46,7 +47,7 @@ const Projects = ()=>{
         <>
             <Nav />
             {/*<div className="cards">*/}
-            <Wrap justify={'space-evenly'} width={'90%'} margin={'auto'}>
+            <Wrap justify={'space-evenly'} width={'85%'} margin={'auto'}>
 
                 {items.map((value, ind) => (
                         // <div className="card_element">

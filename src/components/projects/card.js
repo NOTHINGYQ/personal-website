@@ -12,9 +12,6 @@ import {
     useColorModeValue, Image,
 } from '@chakra-ui/react';
 
-const IMAGE =
-    'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
-
 
 export default function Card(props) {
     return (
@@ -29,7 +26,7 @@ export default function Card(props) {
                 borderWidth={'1px'}
                 minH={'lg'}
                 p={6}
-                paddingBottom={0}
+                paddingBottom={2}
                 textAlign={'center'}>
                 <Image
                     rounded={'lg'}
@@ -37,6 +34,7 @@ export default function Card(props) {
                     width={280}
                     objectFit={'cover'}
                     src={props.item.img}
+                    border={'solid 2px rgb(0, 140, 255)'}
                 />
 
                 <Heading fontSize={'18px'} fontFamily={'body'} marginTop={1} paddingBottom={1}>
