@@ -41,7 +41,7 @@ const NavLink = ({ children }) => {
                 bg: useColorModeValue('gray.200', 'gray.700'),
             }}
             target={tar}
-            href={ url}>
+            href={url.toLowerCase()}>
             {children}
         </Link>
     )
