@@ -75,12 +75,12 @@ export default function ThirdPart(){
             w="full"
             bg="#edf3f8"
             _dark={{ bg: "#3e3e3e" }}
-            p={10}
+            p={7}
             alignItems="center"
             justifyContent="center"
         >
             <Flex w="full" pos="relative" overflow="hidden">
-                <Flex h="400px" w="full" {...carouselStyle}>
+                <Flex h="242px" w="full" {...carouselStyle}>
                     {slides.map((slide, sid) => (
                         <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
                             <Text

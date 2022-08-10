@@ -17,7 +17,7 @@ const items=[
     {
         title:"Minesweeper",
         content:"A react project which use javascript to implement minesweeper game.",
-        img: 'https://image-hub.imgix.net/minesweeper.png?fit=clip',
+        img: 'https://image-hub.imgix.net/minesweeper.png?fit=scale&h=156&w=250',
         tec:["javascript","Node.js","React","GitHub Page","CSS","HTML"],
         demo:"https://nothingyq.github.io/Minesweeper-React/",
         github:"https://github.com/NOTHINGYQ/Minesweeper-React"
@@ -52,7 +52,7 @@ const Projects = ()=>{
                 {items.map((value, ind) => (
                         // <div className="card_element">
                     <WrapItem>
-                        <Center w={'300px'} h={'700px'}>
+                        <Center w={'300px'} h={'600px'}>
                             <Card
                                 item={value}
                             />

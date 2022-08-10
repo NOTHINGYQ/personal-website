@@ -24,20 +24,21 @@ export default function Card(props) {
                 rounded={'lg'}
                 display={'block'}
                 borderWidth={'1px'}
-                minH={'lg'}
+                minH={'md'}
                 p={6}
                 paddingBottom={2}
                 textAlign={'center'}>
                 <Image
                     rounded={'lg'}
-                    height={230}
-                    width={280}
+                    // height={188}
+                    height={156}
+                    width={250}
                     objectFit={'cover'}
                     src={props.item.img}
                     border={'solid 2px rgb(0, 140, 255)'}
                 />
 
-                <Heading fontSize={'18px'} fontFamily={'body'} marginTop={1} paddingBottom={1}>
+                <Heading fontSize={'18px'} fontFamily={'body'} marginTop={2.5} paddingBottom={2}>
                     {props.item.title}
                 </Heading>
                 <Text
@@ -45,7 +46,7 @@ export default function Card(props) {
                     display={'block'}
                     paddingTop={1}
                     fontSize={14}
-                    minH={120}
+                    minH={135}
                     color={useColorModeValue('gray.700', 'gray.400')}
                     >
                     {props.item.content}
@@ -63,7 +64,7 @@ export default function Card(props) {
                 </Stack>
 
 
-                <HStack paddingTop={2} direction={'row'} spacing={12} justify={'center'}>
+                <HStack paddingTop={2.5} paddingBottom={1} direction={'row'} spacing={12} justify={'center'}>
                     <a href={props.item.demo} target={'_blank'}><Button
                         flex={1}
                         fontSize={'sm'}
