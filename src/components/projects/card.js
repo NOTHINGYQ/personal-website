@@ -11,6 +11,7 @@ import {
     HStack,
     useColorModeValue, Image,
 } from '@chakra-ui/react';
+import {BiLinkExternal} from 'react-icons/bi'
 
 
 export default function Card(props) {
@@ -81,7 +82,7 @@ export default function Card(props) {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        Demo
+                        Demo<BiLinkExternal/>
                     </Button></a>
                     <a href={props.item.github} target={'_blank'}><Button
                         flex={1}
@@ -98,7 +99,7 @@ export default function Card(props) {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        Github
+                        Github<BiLinkExternal/>
                     </Button></a>
                 </HStack>
             </Box>

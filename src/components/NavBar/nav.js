@@ -15,17 +15,18 @@ import {
     useDisclosure,
     useColorModeValue,
     useColorMode,
+    Center,
     Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
-
+import {BiLinkExternal} from 'react-icons/bi'
 const Links = ['Home','About Me','Projects', 'Resume'];
 
 const NavLink = ({ children }) => {
     let url = children.split(" ")[0];
     let tar = '_self';
     if(children ==='Resume'){
-        url = 'https://drive.google.com/file/d/1f6MDZJn0vgYEQ5CcvFozOF72e8KO3NpZ/view?usp=sharing';
+        url = 'https://drive.google.com/file/d/1NrPNs6aVobzAnDKhO02U3IqYlTXo9aKG/view?usp=sharing';
         tar = '_blank';
     }
     // if(children ==='Home') url='/';
@@ -41,8 +42,12 @@ const NavLink = ({ children }) => {
                 bg: useColorModeValue('gray.200', 'gray.700'),
             }}
             target={tar}
-            href={url.toLowerCase()}>
-            {children}
+            href={children === 'Resume' ? url : url.toLowerCase()}>
+            <Center>{children}
+            {
+                children === 'Resume' ? <BiLinkExternal/> : <></>
+            }
+            </Center>
         </Link>
     )
 }
@@ -72,6 +77,8 @@ function Nav() {
                             spacing={4}
                             display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => {
+                                if(link === 'other') return <><NavLink>sdf</NavLink><BiLinkExternal/></>
+                                else
                                     return <NavLink key={link}>{link}</NavLink>
                             })}
                         </HStack>
